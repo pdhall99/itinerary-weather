@@ -143,11 +143,25 @@ ITINERARY = [
 ]
 
 
+def sun_time(props, key):
+    event = props.get(key) or {}
+    time_value = event.get("time")
+
+    if not isinstance(time_value, str) or len(time_value) < 16:
+        return "-:-"
+
+    return time_value[11:16]
+
+
 async def fetch_one(client, url):
     try:
         resp = await client.get(url, timeout=10.0)
-        return resp.json() if resp.status_code == 200 else None
-    except httpx.HttpError:
+        if resp.status_code != 200:
+            logger.warning("Non-200 response %s for %s", resp.status_code, url)
+            return None
+        return resp.json()
+    except (httpx.HttpError, ValueError) as exc:
+        logger.warning("Failed to fetch %s: %s", url, exc)
         return None
 
 
@@ -241,12 +255,9 @@ async def main():
                             break
 
             if sn:
-                data["rise"] = (
-                    sn["properties"].get("sunrise", {}).get("time", "    ")[11:16]
-                )
-                data["set"] = (
-                    sn["properties"].get("sunset", {}).get("time", "    ")[11:16]
-                )
+                props = sn.get("properties") or {}
+                data["rise"] = sun_time(props, "sunrise")
+                data["set"] = sun_time(props, "sunset")
 
             offset = (
                 datetime.datetime.strptime(d_str, "%Y-%m-%d").date()
