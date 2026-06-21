@@ -3,39 +3,225 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Itinerary weather</title>
+        <title>Norway itinerary weather</title>
         <style>
-            body { font-family: -apple-system, sans-serif; background: #0a1628; color: #e0e0e0; padding: 15px; margin: 0; }
+            body { font-family: -apple-system, sans-serif; background: #000b14; color: #e0e0e0; padding: 15px; margin: 0; }
             .container { max-width: 500px; margin: auto; }
-            h1 { font-weight: 200; color: #60a5fa; text-align: center; margin-bottom: 25px; }
-            .card { background: linear-gradient(180deg, #1e3a5f 0%, #0f1c2e 100%); border-radius: 20px; padding: 20px; margin-bottom: 15px; border: 1px solid #2d4a6f; }
+            h1 { font-weight: 200; color: #4fc3f7; text-align: center; margin-bottom: 25px; }
+            .card { background: linear-gradient(180deg, #011f35 0%, #00121a 100%); border-radius: 20px; padding: 20px; margin-bottom: 15px; border: 1px solid #1a3a4a; }
             .header { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px; margin-bottom: 15px; }
             .city { font-size: 1.3em; font-weight: bold; color: #fff; }
             .temp-block { text-align: right; }
             .temp-max { font-size: 2.2em; font-weight: 100; color: #fff; line-height: 1; }
             .temp-min { font-size: 0.8em; opacity: 0.5; margin-top: 4px; }
             .metrics-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 10px; margin-bottom: 20px; }
+            .ocean-stats { background: rgba(0,0,0,0.4); padding: 15px; border-radius: 12px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; font-size: 0.75em; border: 1px solid rgba(255,255,255,0.05); text-align: center; }
             .lbl { display: block; font-size: 0.65em; opacity: 0.5; text-transform: uppercase; margin-bottom: 4px; }
             .val { font-weight: bold; color: #fff; font-size: 1.1em; }
             .sun-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 10px; font-size: 0.85em; }
-            .om-btn { background: #60a5fa; color: #0a1628; text-decoration: none; padding: 8px 16px; border-radius: 8px; font-size: 0.75em; font-weight: bold; }
-            .weather-icon { font-size: 3em; text-align: center; }
+            .yr-btn { background: #4fc3f7; color: #001a2c; text-decoration: none; padding: 8px 16px; border-radius: 8px; font-size: 0.75em; font-weight: bold; }
+            img.icon { width: 50px; display: block; margin: auto; }
             footer { text-align: center; font-size: 0.7em; opacity: 0.3; margin-top: 40px; line-height: 1.6; padding-bottom: 40px; }
-            footer a { color: #60a5fa; text-decoration: none; }
+            footer a { color: #4fc3f7; text-decoration: none; }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🏔️ Itinerary weather</h1>
+            <h1>Norway itinerary weather</h1>
             
             <div class="card">
                 <div class="header">
                     <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Tuesday, 19 May</div>
-                        <div class="city">Seattle</div>
+                        <div style="font-size:0.8em; opacity:0.6;">Sunday, 21 Jun</div>
+                        <div class="city">Southampton</div>
                     </div>
                     <div class="temp-block">
-                        <div class="temp-max">18°</div>
+                        <div class="temp-max">28°</div>
+                        <div class="temp-min">Min: 19°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/fair_day.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 3 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.36m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 05:51</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/50.900,-1.400/Norway/50.900,-1.400?i=0" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:23</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Monday, 22 Jun</div>
+                        <div class="city">🌊 North Sea</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">16°</div>
+                        <div class="temp-min">Min: 15°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/partlycloudy_day.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 5 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.9m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.5m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 14.7°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 05:19</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/54.000,2.000/Norway/54.000,2.000?i=1" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:28</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Tuesday, 23 Jun</div>
+                        <div class="city">🌊 North Sea</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">13°</div>
+                        <div class="temp-min">Min: 13°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 8 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 1.4m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.1m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 13.0°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 04:40</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/58.000,4.000/Norway/58.000,4.000?i=2" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:51</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Wednesday, 24 Jun</div>
+                        <div class="city">Olden</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">20°</div>
+                        <div class="temp-min">Min: 13°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 40%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 4 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.0m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.1m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 13.4°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 03:45</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/61.870,6.810/Norway/61.870,6.810?i=3" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 23:25</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Thursday, 25 Jun</div>
+                        <div class="city">Molde</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">16°</div>
+                        <div class="temp-min">Min: 14°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 8%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 6 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 1.8m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.3m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 11.1°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 03:30</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/62.740,7.160/Norway/62.740,7.160?i=4" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 23:37</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Friday, 26 Jun</div>
+                        <div class="city">🌊 Norwegian Sea</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">11°</div>
                         <div class="temp-min">Min: 10°</div>
                     </div>
                 </div>
@@ -43,212 +229,366 @@
                 <div class="metrics-grid">
                     <div style="text-align:left;">
                         <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 1%</span>
+                        <span class="val" style="color:#4fc3f7;">💧 40%</span>
                     </div>
-                    <div class="weather-icon">☁️</div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/rain.svg"></div>
                     <div style="text-align:right;">
                         <span class="lbl">Wind</span>
-                        <span class="val">💨 4 mph</span>
+                        <span class="val">💨 7 m/s</span>
                     </div>
                 </div>
 
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 1.3m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.0m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 11.6°</span></div>
+                </div>
+
                 <div class="sun-row">
-                    <span>🌅 05:26</span>
-                    <a href="https://open-meteo.com/en/docs#47.61,-122.33" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 20:45</span>
+                    <span>🌅 -:-</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/66.000,9.000/Norway/66.000,9.000?i=5" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 -:-</span>
                 </div>
             </div>
             
             <div class="card">
                 <div class="header">
                     <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Monday, 25 May</div>
-                        <div class="city">Haines</div>
-                    </div>
-                    <div class="temp-block">
-                        <div class="temp-max">18°</div>
-                        <div class="temp-min">Min: 6°</div>
-                    </div>
-                </div>
-
-                <div class="metrics-grid">
-                    <div style="text-align:left;">
-                        <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 0%</span>
-                    </div>
-                    <div class="weather-icon">⛅</div>
-                    <div style="text-align:right;">
-                        <span class="lbl">Wind</span>
-                        <span class="val">💨 2 mph</span>
-                    </div>
-                </div>
-
-                <div class="sun-row">
-                    <span>🌅 04:07</span>
-                    <a href="https://open-meteo.com/en/docs#59.23,-135.44" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 21:50</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="header">
-                    <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Monday, 25 May</div>
-                        <div class="city">Juneau</div>
-                    </div>
-                    <div class="temp-block">
-                        <div class="temp-max">17°</div>
-                        <div class="temp-min">Min: 7°</div>
-                    </div>
-                </div>
-
-                <div class="metrics-grid">
-                    <div style="text-align:left;">
-                        <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 0%</span>
-                    </div>
-                    <div class="weather-icon">☀️</div>
-                    <div style="text-align:right;">
-                        <span class="lbl">Wind</span>
-                        <span class="val">💨 4 mph</span>
-                    </div>
-                </div>
-
-                <div class="sun-row">
-                    <span>🌅 04:11</span>
-                    <a href="https://open-meteo.com/en/docs#58.3,-134.42" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 21:37</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="header">
-                    <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Thursday, 04 Jun</div>
-                        <div class="city">Vancouver</div>
-                    </div>
-                    <div class="temp-block">
-                        <div class="temp-max">20°</div>
-                        <div class="temp-min">Min: 12°</div>
-                    </div>
-                </div>
-
-                <div class="metrics-grid">
-                    <div style="text-align:left;">
-                        <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 1%</span>
-                    </div>
-                    <div class="weather-icon">☁️</div>
-                    <div style="text-align:right;">
-                        <span class="lbl">Wind</span>
-                        <span class="val">💨 4 mph</span>
-                    </div>
-                </div>
-
-                <div class="sun-row">
-                    <span>🌅 05:09</span>
-                    <a href="https://open-meteo.com/en/docs#49.28,-123.12" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 21:12</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="header">
-                    <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Saturday, 06 Jun</div>
-                        <div class="city">Jasper</div>
+                        <div style="font-size:0.8em; opacity:0.6;">Saturday, 27 Jun</div>
+                        <div class="city">Tromsø</div>
                     </div>
                     <div class="temp-block">
                         <div class="temp-max">14°</div>
-                        <div class="temp-min">Min: 1°</div>
+                        <div class="temp-min">Min: 10°</div>
                     </div>
                 </div>
 
                 <div class="metrics-grid">
                     <div style="text-align:left;">
                         <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 4%</span>
+                        <span class="val" style="color:#4fc3f7;">💧 34%</span>
                     </div>
-                    <div class="weather-icon">🌦️</div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
                     <div style="text-align:right;">
                         <span class="lbl">Wind</span>
-                        <span class="val">💨 3 mph</span>
+                        <span class="val">💨 4 m/s</span>
                     </div>
                 </div>
 
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.6m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.1m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 11.6°</span></div>
+                </div>
+
                 <div class="sun-row">
-                    <span>🌅 05:29</span>
-                    <a href="https://open-meteo.com/en/docs#52.88,-118.08" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 22:12</span>
+                    <span>🌅 -:-</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/69.650,18.960/Norway/69.650,18.960?i=6" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 -:-</span>
                 </div>
             </div>
             
             <div class="card">
                 <div class="header">
                     <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Wednesday, 10 Jun</div>
-                        <div class="city">Banff</div>
+                        <div style="font-size:0.8em; opacity:0.6;">Sunday, 28 Jun</div>
+                        <div class="city">Tromsø</div>
                     </div>
                     <div class="temp-block">
-                        <div class="temp-max">12°</div>
-                        <div class="temp-min">Min: 6°</div>
+                        <div class="temp-max">13°</div>
+                        <div class="temp-min">Min: 10°</div>
                     </div>
                 </div>
 
                 <div class="metrics-grid">
                     <div style="text-align:left;">
                         <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 43%</span>
+                        <span class="val" style="color:#4fc3f7;">💧 26%</span>
                     </div>
-                    <div class="weather-icon">☁️</div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
                     <div style="text-align:right;">
                         <span class="lbl">Wind</span>
-                        <span class="val">💨 10 mph</span>
+                        <span class="val">💨 3 m/s</span>
                     </div>
                 </div>
 
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.5m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.1m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 11.8°</span></div>
+                </div>
+
                 <div class="sun-row">
-                    <span>🌅 05:27</span>
-                    <a href="https://open-meteo.com/en/docs#51.18,-115.57" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 21:56</span>
+                    <span>🌅 -:-</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/69.650,18.960/Norway/69.650,18.960?i=7" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 -:-</span>
                 </div>
             </div>
             
             <div class="card">
                 <div class="header">
                     <div>
-                        <div style="font-size:0.8em; opacity:0.6;">Friday, 12 Jun</div>
-                        <div class="city">Niagara Falls</div>
+                        <div style="font-size:0.8em; opacity:0.6;">Monday, 29 Jun</div>
+                        <div class="city">Honningsvåg</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">13°</div>
+                        <div class="temp-min">Min: 11°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 16%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 4 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 0.3m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ 0.4m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ 11.1°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 -:-</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/70.980,25.970/Norway/70.980,25.970?i=8" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 -:-</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Tuesday, 30 Jun</div>
+                        <div class="city">🌊 Norwegian Sea</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">11°</div>
+                        <div class="temp-min">Min: 11°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 20%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 8 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 -:-</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/67.000,12.000/Norway/67.000,12.000?i=9" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 -:-</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Wednesday, 01 Jul</div>
+                        <div class="city">Trondheim</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">17°</div>
+                        <div class="temp-min">Min: 13°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 -%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/unknown.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 3 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 03:11</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/63.430,10.390/Norway/63.430,10.390?i=10" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 23:32</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Thursday, 02 Jul</div>
+                        <div class="city">Ålesund</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">14°</div>
+                        <div class="temp-min">Min: -°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/cloudy.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 10 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 03:46</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/62.470,6.150/Norway/62.470,6.150?i=11" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 23:31</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Friday, 03 Jul</div>
+                        <div class="city">🌊 North Sea</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">13°</div>
+                        <div class="temp-min">Min: -°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/clearsky_day.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 2 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 04:51</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/58.000,3.000/Norway/58.000,3.000?i=12" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:51</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Saturday, 04 Jul</div>
+                        <div class="city">🌊 English Channel</div>
                     </div>
                     <div class="temp-block">
                         <div class="temp-max">26°</div>
-                        <div class="temp-min">Min: 18°</div>
+                        <div class="temp-min">Min: -°</div>
                     </div>
                 </div>
 
                 <div class="metrics-grid">
                     <div style="text-align:left;">
                         <span class="lbl">Prob. Rain</span>
-                        <span class="val" style="color:#60a5fa;">💧 4%</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
                     </div>
-                    <div class="weather-icon">☁️</div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/partlycloudy_day.svg"></div>
                     <div style="text-align:right;">
                         <span class="lbl">Wind</span>
-                        <span class="val">💨 10 mph</span>
+                        <span class="val">💨 4 m/s</span>
                     </div>
                 </div>
 
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
                 <div class="sun-row">
-                    <span>🌅 05:36</span>
-                    <a href="https://open-meteo.com/en/docs#43.09,-79.08" class="om-btn" target="_blank">FORECAST ↗</a>
-                    <span>🌇 20:56</span>
+                    <span>🌅 05:42</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/52.000,1.000/Norway/52.000,1.000?i=13" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:17</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="header">
+                    <div>
+                        <div style="font-size:0.8em; opacity:0.6;">Sunday, 05 Jul</div>
+                        <div class="city">Southampton</div>
+                    </div>
+                    <div class="temp-block">
+                        <div class="temp-max">28°</div>
+                        <div class="temp-min">Min: -°</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div style="text-align:left;">
+                        <span class="lbl">Prob. Rain</span>
+                        <span class="val" style="color:#4fc3f7;">💧 0%</span>
+                    </div>
+                    <div style="text-align:center;"><img class="icon" src="https://raw.githubusercontent.com/metno/weathericons/main/weather/svg/fair_day.svg"></div>
+                    <div style="text-align:right;">
+                        <span class="lbl">Wind</span>
+                        <span class="val">💨 3 m/s</span>
+                    </div>
+                </div>
+
+                <div class="ocean-stats">
+                    <div><span class="lbl">Waves</span><span class="val">🌊 -m</span></div>
+                    <div><span class="lbl">Water Flow</span><span class="val">⚓ -m/s</span></div>
+                    <div><span class="lbl">Sea Temp</span><span class="val">🌡️ -°</span></div>
+                </div>
+
+                <div class="sun-row">
+                    <span>🌅 05:58</span>
+                    <a href="https://www.yr.no/en/forecast/hourly-table/50.900,-1.400/Norway/50.900,-1.400?i=14" class="yr-btn" target="_blank">HOURLY TABLE ↗</a>
+                    <span>🌇 22:21</span>
                 </div>
             </div>
             
 
             <footer>
-                Weather data from <a href="https://open-meteo.com/">Open-Meteo</a><br>
-                Updated: 2026-06-21 03:40 UTC
+                Weather data from <a href="https://www.met.no/en">MET Norway</a><br>
+                Marine data via <a href="https://open-meteo.com/">Open-Meteo</a><br>
+                Updated: 2026-06-21 16:04 UTC
             </footer>
         </div>
     </body>
