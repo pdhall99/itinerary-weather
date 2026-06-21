@@ -160,7 +160,7 @@ async def fetch_one(client, url):
             logger.warning("Non-200 response %s for %s", resp.status_code, url)
             return None
         return resp.json()
-    except (httpx.HttpError, ValueError) as exc:
+    except (httpx.HTTPError, ValueError) as exc:
         logger.warning("Failed to fetch %s: %s", url, exc)
         return None
 
